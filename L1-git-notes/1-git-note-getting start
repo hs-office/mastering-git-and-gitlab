@@ -1,0 +1,9 @@
+mastering git:
+steps:
+ // getting start
+1. open ide and create new project
+2. open ide's terminal:
+ * git --version                                // check git version(please install git if this not found)
+ * winget upgrade --id Git.Git -e               // update git into latest
+ *
+

@@ -1,0 +1,18 @@
+mastering git:
+steps:
+ // creating repo
+ 1. still in terminal(read 1-git-note-getting start)
+ 2. mkdir hs-website
+ 3. cd hs-website
+ 4. git status
+ 5. git init
+
+
+ info:
+ - repository(repo) is a place to store something
+ - a git repo stores files and keeps track of any changes called
+   version control system ~ to able to keep track of all changes
+   see whos made them and if needed(issues) people can revert into
+   a previous version
+ - it can integrate with a lot of people at same time without the need
+   of extra works
