@@ -3,6 +3,7 @@ steps:
  // commit
  1. on terminal
     * git status
-    * git add .
+    * git add .                         // add all changes
+    * git add file-name                 //can use this to commit specific file
     * git commit or git commit -m 'message'
     * git push -u origin main
