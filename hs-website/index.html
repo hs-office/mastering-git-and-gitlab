@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic-Git-Essentials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="title-wrap">
+        <h1>Basic Git Essentials</h1>
+        <div class="subtitle">learn everyday git command by hs</div>
+
+    </div>
+</header>
+
+<nav>
+    <a href="#intro">Intro</a>
+    <a href="#setup">Setup</a>
+    <a href="#repo">Repository</a>
+    <a href="#workflow">Workflow</a>
+    <a href="#branching">Branching</a>
+    <a href="#merge">Merge</a>
+    <a href="#remote">Remote</a>
+    <a href="#recovery">Recovery</a>
+</nav>
+<main>
+
+    <div class="topic" id="intro">
+        <h2>Topic 1 - What is Git?</h2>
+        <div class="row">
+            <div>what & why of git</div>
+            <div>
+                Git is like a timeline for your code. It lets you track changes, go back in time, and collaborate smoothly with others. Whether you mess up or want to try something new, Git has your back. It's a core skill every developer should feel comfortable using.
+            </div>
+        </div>
+        <div class="row">
+            <div>Version Control</div>
+            <div>
+                Git is a version control system that helps you manage changes to your code over time. Think of it like a time machine for your project.
+            </div>
+        </div>
+        <div class="row">
+            <div>Git vs GitHub</div>
+            <div>
+                Git is the tool while GitHub is a platform for sharing your Git repositories in the cloud.
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="setup">
+        <h2>Topic 2 - Installation & Setup</h2>
+        <div class="row">
+            <div>install & config</div>
+            <div>
+                Setting up Git takes just a few minutes. Install it on your machine, and introduce yourself to Git with your name and email. These basics are important because every Git action is logged under your identity.
+            </div>
+        </div>
+        <div class="row">
+            <div>Installation</div>
+            <div>
+                Download Git from <a href="https://git-scm.com">git-scm.com</a> and follow the setup wizard.
+            </div>
+        </div>
+        <div class="row">
+            <div>User Identity</div>
+            <div>
+                Set your global username and email:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git config --global user.name "your-name"</code>
+                    <code>git config --global user.email "you@example.com"</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="repo">
+        <h2>Topic 3 - Creating or Getting a Project</h2>
+        <div class="row">
+            <div>start your project</div>
+            <div>
+                Git lets you manage any folder like a smart notebook. You can create a new project with Git or clone an existing one from the web. This is your starting point for working with code efficiently and safely.
+            </div>
+        </div>
+        <div class="row">
+            <div>New Local Repo</div>
+            <div>
+                Turn any folder into a Git repository:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git init</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Clone from Remote</div>
+            <div>
+                Copy a project from GitHub to your computer:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git clone https://github.com/yourname/repo.git</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="workflow">
+        <h2>Topic 4 - Making & Saving Changes</h2>
+        <div class="row">
+            <div>save your changes</div>
+            <div>
+                As you edit files, Git helps you stage, review, and lock in those changes with a message. This gives your project a clear history, so every improvement or fix is easy to track and undo if needed.
+            </div>
+        </div>
+        <div class="row">
+            <div>Status</div>
+            <div>
+                Check what has changed:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git status</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Stage</div>
+            <div>
+                Add your changes to staging:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git add .</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Commit</div>
+            <div>
+                Save your changes with a message:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git commit -m "your message here"</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="branching">
+        <h2>Topic 5 - Branching for Features/Fixes</h2>
+        <div class="row">
+            <div>work on new ideas</div>
+            <div>
+                Branches help you experiment without fear. Try new ideas, fix bugs, or build features without touching the main version. Once it works, you can bring your changes back in. It's like having a safe draft space for your code.
+            </div>
+        </div>
+        <div class="row">
+            <div>Create</div>
+            <div>
+                Start a new branch:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git branch feature-login</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Switch</div>
+            <div>
+                Move to another branch:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git checkout feature-login</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="merge">
+        <h2>Topic 6 - Merging and Fixing Conflicts</h2>
+        <div class="row">
+            <div>bring changes together</div>
+            <div>
+                When your work is done, merging combines changes from different branches. Git handles it smartly, but if two people edit the same thing, you’ll resolve the difference. It keeps the team moving forward together.
+            </div>
+        </div>
+        <div class="row">
+            <div>Merge</div>
+            <div>
+                Combine changes from one branch into another:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git merge feature-login</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Conflict Fix</div>
+            <div>
+                If there are conflicts, Git will show them in your files. After fixing them:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git add .</code>
+                    <code>git commit -m "resolve conflict"</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="remote">
+        <h2>Topic 7 - GitHub & Remote Collaboration</h2>
+        <div class="row">
+            <div>sync with github</div>
+            <div>
+                Remote repositories like GitHub let you share code and collaborate with others. You can push your changes, pull updates, and work as a team ~ all while keeping track of everything using Git.
+            </div>
+        </div>
+        <div class="row">
+            <div>Add remote</div>
+            <div>
+                Link your project to GitHub:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git remote add origin https://github.com/yourname/repo.git</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Push</div>
+            <div>
+                Send your changes to GitHub:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git push -u origin main</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Pull</div>
+            <div>
+                Get the latest updates from GitHub:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git pull</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="recovery">
+        <h2>Topic 8 - Undoing Mistakes (Reset, Revert, Restore)</h2>
+        <div class="row">
+            <div>fix mistakes</div>
+            <div>
+                Made a mistake? Don’t worry. Git offers multiple ways to undo things ~ from un-staging files, undoing commits, or rolling back changes entirely. It gives you confidence to explore without breaking your code.
+            </div>
+        </div>
+        <div class="row">
+            <div>Unstage File</div>
+            <div>
+                Remove a file from staging area:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git reset HEAD filename</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Undo Last Commit</div>
+            <div>
+                Undo the latest commit but keep the changes:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git reset --soft HEAD~1</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Revert Commit</div>
+            <div>
+                Create a new commit that undoes a previous one:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git revert commit_id</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="scripts.js" defer></script>
+</body>
+</html>

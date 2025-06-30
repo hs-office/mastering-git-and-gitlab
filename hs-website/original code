@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Handbook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-margin-top: 100px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Google Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #111;
+            font-size: 20px;
+        }
+        header {
+            padding: 3rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin: 0;
+        }
+        nav {
+            background-color: #2A2B3E;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem 4rem;
+            width: 100%;
+        }
+        .topic {
+            margin-top: 6rem;
+            padding: 0 1rem;
+        }
+        .topic h2 {
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+            border-bottom: 2px solid #111;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+        .row {
+            display: flex;
+            gap: 3rem;
+            align-items: flex-start;
+        }
+        .row + .row {
+            margin-top: 4rem;
+        }
+        .row > div:first-child {
+            flex: 0 0 300px;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+        .row > div:last-child {
+            flex: 1;
+            font-size: 1.7rem;
+            line-height: 1.6;
+        }
+        .code-block {
+            background: #2A2B3E;
+            border-radius: 14px;
+            padding: 1.8rem;
+            position: relative;
+            margin-top: 1rem;
+            font-family: 'Google Sans', sans-serif;
+        }
+        .code-block code {
+            display: block;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-size: 1.6rem;
+            color: #f2f2f2;
+            font-family: 'Google Sans', sans-serif;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 0.7rem;
+            background-color: #f2f2f2;
+            color: #2A2B3E;
+            border: none;
+            border-radius: 5px;
+            font-size: 4rem;
+            cursor: pointer;
+            font-family: 'Google Sans', sans-serif;
+        }
+        .copy-btn i {
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Git Handbook</h1>
+</header>
+<nav>
+    <a href="#getting-started">Getting Started</a>
+    <a href="#everyday-commands">Everyday Commands</a>
+</nav>
+<main>
+    <div class="topic" id="getting-started">
+        <h2>Topic 1 - Getting Started</h2>
+        <div style="margin-bottom: 3rem;"></div>
+        <div class="row">
+            <div>Installation</div>
+            <div>
+                Download Git from <a href="https://git-scm.com">git-scm.com</a> and follow the setup wizard for your OS. It's simple, clean, and fast.
+            </div>
+        </div>
+        <div style="margin-bottom: 5rem;"></div>
+        <div class="row">
+            <div>Setup</div>
+            <div>
+                Before using Git, tell it who you are. This helps identify your commits clearly:
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></button>
+                    <code>git config --global user.name "Your Name ~ eg: hs"</code>
+                    <code>git config --global user.email "you@example.com"</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="everyday-commands">
+        <h2>Topic 2 - Everyday Commands</h2>
+        <div class="row">
+            <div>Start a repo</div>
+            <div>
+                Turn any folder into a Git repository — like giving it a memory:
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></button>
+                    <code>git init</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Stage changes</div>
+            <div>
+                Add all current changes to the stage — like preparing for a snapshot:
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></button>
+                    <code>git add .</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Save a snapshot</div>
+            <div>
+                Lock in your current progress with a delightful little message:
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></button>
+                    <code>git commit -m "your message here"</code>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Check status</div>
+            <div>
+                Peek into what's new, what’s staged, and what’s waiting to be saved:
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></button>
+                    <code>git status</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    function copyToClipboard(button) {
+        const code = button.nextElementSibling.innerText;
+        navigator.clipboard.writeText(code).then(() => {
+            button.innerHTML = '<i class="fas fa-check"></i>';
+            setTimeout(() => button.innerHTML = '<i class="fas fa-copy"></i>', 1500);
+        });
+    }
+</script>
+</body>
+</html>
