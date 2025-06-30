@@ -21,11 +21,12 @@
     <a href="#intro">Intro</a>
     <a href="#setup">Setup</a>
     <a href="#repo">Repository</a>
-    <a href="#workflow">Workflow</a>
+    <a href="#upload">Update</a>
     <a href="#branching">Branching</a>
     <a href="#merge">Merge</a>
     <a href="#remote">Remote</a>
     <a href="#recovery">Recovery</a>
+    <a href="#workflow">Workflow</a>
 </nav>
 <main>
 
@@ -108,7 +109,7 @@
         </div>
     </div>
 
-    <div class="topic" id="workflow">
+    <div class="topic" id="upload">
         <h2>Topic 4 - Making & Saving Changes</h2>
         <div class="row">
             <div>save your changes</div>
@@ -288,6 +289,127 @@
             </div>
         </div>
     </div>
+
+    <div class="topic" id="workflow">
+        <h2>Topic 9 - Real-World Git Workflow</h2>
+        <div class="row">
+            <div>work like a pro</div>
+            <div>
+                Understanding how professionals use Git daily helps you work smarter and cleaner. From starting a branch to merging your work, this workflow keeps your history tidy and your team happy.
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Start from main</div>
+            <div>
+                Always begin from the latest main branch to ensure you're up to date:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git checkout main</code>
+                    <code>git pull origin main</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Create a branch</div>
+            <div>
+                Make a new branch for your task. Use clear names like:
+                <code>feature/login-form</code>, <code>bugfix/login-error</code>
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git switch -c feature/login-form</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Status check</div>
+            <div>
+                While working, see what files changed before staging:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git status</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Stage & commit</div>
+            <div>
+                Add only what you need. Write clear messages with prefixes:
+                <code>feat:</code>, <code>fix:</code>, <code>test:</code>, etc.
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git add filename</code>
+                    <code>git commit -m "feat: add validation to login form"</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Push to GitHub</div>
+            <div>
+                Send your branch online for review or backup:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git push -u origin feature/login-form</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Create PR</div>
+            <div>
+                Go to GitHub and open a Pull Request. Explain what changed, why it matters, and attach screenshots if needed.
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Review & improve</div>
+            <div>
+                Make edits based on feedback and push again:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git add .</code>
+                    <code>git commit -m "fix: update error message style"</code>
+                    <code>git push</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Merge it</div>
+            <div>
+                Once approved, merge your PR and delete the branch if no longer needed.
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Stay updated</div>
+            <div>
+                After merging, sync your local code with the latest main:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git checkout main</code>
+                    <code>git pull origin main</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Extra tools</div>
+            <div>
+                Optional but handy:
+                <div class="code-block">
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <code>git stash</code>
+                    <code>git log --oneline</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </main>
 <script src="scripts.js" defer></script>

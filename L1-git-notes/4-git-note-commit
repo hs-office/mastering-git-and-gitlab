@@ -7,3 +7,4 @@ steps:
     * git add file-name                 //can use this to commit specific file
     * git commit -m 'message'
     * git push -u origin main
+    * git log                           // view changes

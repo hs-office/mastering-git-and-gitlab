@@ -6,4 +6,4 @@ steps:
     * git config --global user.email 'hakimisaad.hs@gmail.com'
  2. go to github, create new repo and copy the link
     * git remote add origin paste-copy-link-here.git
-    *
+
