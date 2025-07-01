@@ -1,0 +1,7 @@
+mastering git:
+steps:
+ // view changes
+ 1. git log                     // print log of changes in simple form
+ 2. git log --patch             // print log of changes more details form
+ 3. q                           // type 'q' then enter to logout from log
+ 4.

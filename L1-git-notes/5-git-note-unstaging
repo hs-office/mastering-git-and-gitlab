@@ -1,0 +1,6 @@
+mastering git:
+steps:
+ // unstaging on terminal
+ 1. git status                      // print files to commit    eg: a, b
+ 2. git reset HEAD file-name        // remove file from commited b
+ 3. git status                      // display: a in green(commit), b in red
