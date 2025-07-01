@@ -1,0 +1,17 @@
+mastering git:
+steps:
+ // creating branch
+ 1. git branch branch-name
+ 2. git checkout branch-name                // move to that sub-branch
+ 3. git checkout main                       // to move back to main
+
+// delete a branch
+1. git branch -d branch-name                // cannot delete if hvnt merge
+2. git branch -D branch-name                // forge delete even hvnt merge
+3. git push origin --delete branch-name
+
+// merging branch
+must: git checkout main
+1. git merge branch-name
+2. git add .
+3. git commit -m 'message'

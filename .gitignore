@@ -1,0 +1,21 @@
+# folders
+node_modules/
+dist/
+build/
+.idea/
+.vscode/
+here-gitignore
+
+# files
+.file-to-ignore
+.env
+*.log
+*.tmp
+.DS_Store
+
+# test snapshots or recordings
+cypress/screenshots/
+cypress/videos/
+
+# OS-specific
+Thumbs.db

@@ -1,0 +1,6 @@
+mastering git:
+steps:
+ // ignore the files and folders and dont track them
+ 1. create file name it .gitignore
+ 2. paste the name of file or folder you want to ignore/track
+ 3. if already track git wont ignore it
