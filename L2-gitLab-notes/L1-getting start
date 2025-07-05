@@ -6,3 +6,7 @@ Steps:
 4. terminal
 5. use this if you already connect to git as you cannot use same name(eg: origin)
    - git remote add gitlab-origin git@gitlab.com:hs-office1-group/hs-office1-project.git
+6. normal stuf like git: add, commit
+7. push:
+   git push remote-name branch-name             // example as below
+   git push gitlab-origin main                     eg:

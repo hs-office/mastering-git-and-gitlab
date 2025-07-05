@@ -1,0 +1,8 @@
+steps:
+1. open terminal
+2. ssh-keygen -t ed25519 -C "hs@gmail.com"
+3. enter button for all of them
+4. copy your id
+5. cat ~/.ssh/your-id.pub
+6. copy the long id
+7. paste it on gitlab --> add ssh key
