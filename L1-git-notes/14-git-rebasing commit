@@ -1,0 +1,24 @@
+rebase moves or arrange in order of branchs commits on top of another branch
+reasons:
+ * makes commit history linear and clean
+ * avoids messy "merge commits"
+ * keeps features stacked neatly on latest main
+example:
+main ----------------------got-new-commit
+└── feature/login-form
+
+ steps:
+ git checkout feature/login-form
+ git fetch origin
+ git rebase origin/main
+
+ # (if conflict)
+ # fix file
+ git add .
+ git rebase --continue
+
+ # (to cancel)
+ git rebase --abort
+
+ # final push
+ git push --force

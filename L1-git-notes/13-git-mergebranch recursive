@@ -1,0 +1,38 @@
+a recursive merge is when two branch or more have commit
+fast-foward cannot be done
+steps:
+ 1. git branch          // print all branch
+ 2. git checkout main
+ 3. git pull origin main
+ 4. git merge feature/branch-name
+
+
+ example:
+ main
+ │
+ ├── feature/A                      ← main branch for Feature A
+ │   ├── feature/A/part-1           ← sub-task or test case A1
+ │   └── feature/A/part-2           ← sub-task or test case A2
+ │
+ ├── feature/B                      ← main branch for Feature B
+ │   └── feature/B/part-1           ← sub-task or bug fix B1
+ │
+ └── feature/C                      ← main branch for Feature C
+
+steps:
+1. Work on sub-branch
+   git checkout feature/A/part-1
+   ... do your testing or changes ...
+
+2. Merge part-1 into parent feature
+   git checkout feature/A
+   git merge feature/A/part-1
+
+3. Merge part-2 if needed
+   git merge feature/A/part-2
+
+4. Merge feature A into main
+   git checkout main
+   git pull origin main
+   git merge feature/A
+

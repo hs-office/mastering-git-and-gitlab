@@ -1,0 +1,8 @@
+mastering git:
+steps:
+ // merging branch
+ 1. git checkout main
+ 2. git pull origin main
+ 3. git merge branch-name  /    git merge branch-name/sub-branch-name
+    # fix conflicts if any
+ 4. git push origin main

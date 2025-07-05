@@ -1,0 +1,10 @@
+// only can do this if main branch didnt have any changes
+steps:
+1. git checkout main
+2. git pull origin main
+3. git merge --ff-only branch-name
+4. git push origin main
+
+if got something like this:
+CONFLICT (content): Merge conflict in filename.js
+then fast-foward cannot be done!
