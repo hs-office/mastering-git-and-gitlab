@@ -1,0 +1,8 @@
+situation:
+someone edit the fileN on gitlab and while on local repo you also edit the
+same fileN, if user trying to do git push they will get error
+
+steps:
+1. git pull
+2.
+

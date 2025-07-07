@@ -1,0 +1,8 @@
+situation:
+someone changed something like code or anything in gitlab.
+by default, in local repo our files not updated to latest version
+and user wont see it on the local log
+in order to get latest ver we need to run git pull
+
+steps:
+1. git pull remote-name branch-name     // git pull gitlab-origin main

@@ -4,9 +4,10 @@ Steps:
    - no readme
 3. go to your project ide
 4. terminal
-5. use this if you already connect to git as you cannot use same name(eg: origin)
-   - git remote add gitlab-origin git@gitlab.com:hs-office1-group/hs-office1-project.git
-6. normal stuf like git: add, commit
+5. use this if you already connect to git as you cannot use same branch-name(eg: origin)
+   - git remote add new-branch-name git@gitlab.com:your-gitlab-project-link
+   - eg: git remote add gitlab-origin git@gitlab.com:hs-office1-group/hs-office1-project.git
+6. normal stuff like git-command: add, commit
 7. push:
-   git push remote-name branch-name             // example as below
-   git push gitlab-origin main                     eg:
+   - git push remote-name branch-name             // example as below
+   - eg: git push gitlab-origin main
